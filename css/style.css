@@ -10,7 +10,7 @@ body, footer{
     align-items: center;
 }
 .banner, .newsletter, .informations, .first-article, 
-.first-article__header time, .first-article__container, .articles-wrap, .second-article__header time, .categories, .forth-article, footer,.first-article__header{
+.first-article__header p, .first-article__container, .articles-wrap, .second-article__header p, .categories, .forth-article, footer,.first-article__header{
     display: flex;
     width:95vw;
     max-width:940px; 
@@ -126,7 +126,7 @@ a{
     justify-content: center;
     text-align: left;
 }
-.first-article__header time{
+.first-article__header p{
     justify-content: flex-end;
 }
 .first-article__container__text{
@@ -164,7 +164,7 @@ a{
 .second-article{
     background: url("../img/decoration_Article3.png") no-repeat 55% 95%;
 }
-.second-article__header time, .third-article__header{
+.second-article__header p, .third-article__header{
     flex-grow: 1;
 }
 .second-article__image{
@@ -351,7 +351,7 @@ footer{
         align-items: center;
     }
     .banner, .newsletter, .informations, .first-article,  
-    .first-article__header time, .first-article__header, .articles-wrap, .second-article__header time, .categories, .forth-article, footer{
+    .first-article__header p, .first-article__header, .articles-wrap, .second-article__header p, .categories, .forth-article, footer{
         display: flex;
         width:95vw;
         max-width: 680px; 
@@ -521,7 +521,7 @@ footer{
         flex-direction: column;
         text-align: left;
     }
-    .first-article__header time{
+    .first-article__header p{
         justify-content: flex-end;
     }
     .first-article__container__text{
@@ -568,7 +568,7 @@ footer{
         margin-left:0px;   
         background: url("../img/decoration_Article3.png") no-repeat 0% 0%;
     }
-    .second-article__header time, .third-article__header{ 
+    .second-article__header p, .third-article__header{ 
         flex-grow: 0;
     }
     .second-article__header{
@@ -788,7 +788,7 @@ footer{
             align-items: center;
         }
         header, .banner, .newsletter, .informations, .first-article, 
-        .first-article__header time, .first-article__header, .first-article__container, .articles-wrap, .second-article__header time, .categories, .forth-article, footer{
+        .first-article__header p, .first-article__header, .first-article__container, .articles-wrap, .second-article__header p, .categories, .forth-article, footer{
             display: flex;
             width:95vw;
             max-width:1140px; 
@@ -898,7 +898,7 @@ footer{
             flex-direction: column;
             text-align: left;
         }
-        .first-article__header time{
+        .first-article__header p{
             justify-content: flex-end;
         }
         .first-article__container__text{
@@ -936,7 +936,7 @@ footer{
         .third-article{
             margin-left:60px;   
         }
-        .second-article__header time, .third-article__header{
+        .second-article__header p, .third-article__header{
             flex-grow: 1;
         }
         .second-article__image{
