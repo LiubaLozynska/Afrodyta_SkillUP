@@ -23,6 +23,9 @@ a{
     text-decoration: none;
     color: black;
 }
+nav{
+    display: flex;  
+}
 .logo{
     display: flex;
     align-items: flex-end;
@@ -71,6 +74,7 @@ a{
     height:550px;
     background-image: url("../img/Banner.png");   
 }
+
 .big_txt{
     text-shadow: #4d4d4d 0 0 15px;
     font-family: 'Raleway', sans-serif;
@@ -287,6 +291,9 @@ a{
 .categories__item:nth-child(3){
     background: url("../img/Categories_image_eum.png") no-repeat center;
 }
+section.categories__item h1{
+    font-size: 5rem;
+}
 .forth-article{
     justify-content: space-between;
     margin-top: 100px;
@@ -322,6 +329,9 @@ footer{
     width:58vw;
     max-width:700px;
     min-width: 600px;
+}
+p.footer__links__item a{
+    font-size: 1rem;
 }
 .footer__textarea{
     width:77vw;
@@ -373,6 +383,11 @@ footer{
         text-decoration: none;
         color: black;
     }
+    nav{
+        width: 95vw;
+        display: flex;  
+        align-items:baseline;
+    }
     .logo{
         display: flex;
         justify-content: flex-start;    
@@ -396,6 +411,8 @@ footer{
        
     }
     .navigation__item{
+        display: flex;
+        justify-content: flex-start;
         margin-top:10px;
         height: 25px;
         
@@ -408,9 +425,8 @@ footer{
     }
     .navigation__item a:hover{
         display: block;
-        height: 25px;
-        background: url("../img/underline.png") no-repeat bottom right;
-        background-size: 70px;
+        height: 20px;
+        background: url("../img/underline.png") no-repeat bottom;
     }
     .navigation ul li{
         float: left;
@@ -421,18 +437,21 @@ footer{
 
     .mobile-nav{
         text-align: right;
-        display: block;
+        display: flex;
+        justify-content: flex-end;
         width:75vw;
         max-width: 480px;
         flex-grow: 1;
     }
+    
     .collapsible {
         background-color: #777;
         color: white;
         cursor: pointer;
-        padding: 18px;
-        width:20%;
+        padding: 15px;
+        width: 15%;
         border: none;
+        border-radius: 2%;
         text-align: center;
         outline: none;
         font-size: 17px;
@@ -440,7 +459,7 @@ footer{
         font-family: Arial, Helvetica, sans-serif;
         text-transform: uppercase;
         letter-spacing: 1px;
-        margin-top: 10px;
+        font-size: 25px;
       }
       
       .active, .collapsible:hover {
@@ -448,12 +467,19 @@ footer{
       }
       
       .content {
+        display: flex;
+        position: absolute;
+        left: -5px;
+        top:70px;
         padding: 0 18px;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.5s ease-out;
         background-color:white;
        
+      }
+      div.content .navigation__item{
+          width:93vw;
       }
     
       /* End of collapsible manu button styles */
@@ -468,6 +494,9 @@ footer{
     .banner{
         height:550px;
         background: url("../img/Banner.png") no-repeat center;   
+    }
+    section.banner h1{
+        font-size: 4rem;
     }
     .big_txt{
         text-shadow: #4d4d4d 0 0 15px;
@@ -722,6 +751,9 @@ footer{
     .categories__item:nth-child(3){
         background: url("../img/Categories_image_eum.png") no-repeat center;
     }
+    section.categories__item h1{
+        font-size: 3rem;
+    }
     .forth-article{
         flex-direction: column;
         align-items: center;
@@ -758,8 +790,12 @@ footer{
         justify-content: space-between;
     }
     .footer__links{
+        flex-wrap: wrap;
         width:60vw;
-        max-width:450px;
+        min-width: 450px;
+    }
+    p.footer__links__item a{
+        font-size: 0.8rem;
     }
     .footer__textarea{
         width:95vw;
@@ -797,10 +833,13 @@ footer{
             text-decoration: none;
             color: black;
         }
+        nav{
+            display: flex;  
+        }
         .logo{
             display: flex;
             align-items: flex-end;
-            width:15vw;
+            width:10vw;
             max-width:180px;
             height: 100px;
             font-size: 40px;
@@ -1095,8 +1134,12 @@ footer{
             justify-content: space-between;
         }
         .footer__links{
+            flex-wrap: wrap;
             width:58vw;
             max-width:770px;
+        }
+        p.footer__links__item a{
+            font-size: 1rem;
         }
         .footer__textarea{
             width:77vw;
