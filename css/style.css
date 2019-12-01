@@ -23,6 +23,9 @@ a{
     text-decoration: none;
     color: black;
 }
+a:hover{
+    font-weight: 900;
+}
 nav{
     display: flex;  
 }
@@ -383,6 +386,9 @@ p.footer__links__item a{
         text-decoration: none;
         color: black;
     }
+    a:hover{
+        font-weight: 900;
+    }
     nav{
         width: 95vw;
         display: flex;  
@@ -493,7 +499,7 @@ p.footer__links__item a{
     }
     .banner{
         height:550px;
-        background: url("../img/Banner.png") no-repeat center;   
+        background: url("../img/Banner.png") no-repeat left;
     }
     section.banner h1{
         font-size: 4rem;
@@ -791,11 +797,11 @@ p.footer__links__item a{
     }
     .footer__links{
         flex-wrap: wrap;
-        width:60vw;
+        width:80vw;
         min-width: 450px;
     }
     p.footer__links__item a{
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
     .footer__textarea{
         width:95vw;
@@ -832,6 +838,9 @@ p.footer__links__item a{
         a{
             text-decoration: none;
             color: black;
+        }
+        a:hover{
+            font-weight: 900;
         }
         nav{
             display: flex;  
