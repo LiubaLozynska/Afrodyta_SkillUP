@@ -1,4 +1,4 @@
-Symu free template - Arfodytha;
+Symu free template - Arfodyta;
 <br>
 Clean HTML and CSS;
 <br>
