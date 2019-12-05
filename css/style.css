@@ -447,7 +447,7 @@ p.footer__links__item a{
         justify-content: flex-end;
         width:75vw;
         max-width: 480px;
-        flex-grow: 1;
+        flex-grow: 0;
     }
     
     .collapsible {
@@ -455,7 +455,8 @@ p.footer__links__item a{
         color: white;
         cursor: pointer;
         padding: 15px;
-        width: 15%;
+        width: 15vw;
+        min-width: 50px;
         border: none;
         border-radius: 2%;
         text-align: center;
@@ -475,7 +476,8 @@ p.footer__links__item a{
       .content {
         display: flex;
         position: absolute;
-        left: -5px;
+        left: 0px;
+        width: 96vw;
         top:70px;
         padding: 0 18px;
         max-height: 0;
@@ -502,7 +504,7 @@ p.footer__links__item a{
         background: url("../img/Banner.png") no-repeat left;
     }
     section.banner h1{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .big_txt{
         text-shadow: #4d4d4d 0 0 15px;
@@ -543,7 +545,7 @@ p.footer__links__item a{
         font-weight:700;
     }
     .banner__text{
-        font-size: 85px;
+        font-size: 0.5rem;
         letter-spacing: 8px;
         line-height: 90px;
         margin-bottom: 20px;
@@ -623,12 +625,12 @@ p.footer__links__item a{
     .second-article__text{
         align-self: flex-start;
         text-transform: uppercase;
-        font-size: 60px;
+        font-size: 3rem;
         font-family: 'arial black', sans-serif;
         line-height: 80px;
         font-weight: 900;
         padding-top: 35px;
-        letter-spacing: 6px;
+        letter-spacing: 3px;
         width:65vw;
         max-width:500px;
     }
@@ -681,7 +683,7 @@ p.footer__links__item a{
         text-align: center;
         font-weight: 700;
         margin-top:20px;
-        font-size: 45px;
+        font-size: 2rem;
         letter-spacing: 2px;
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -723,7 +725,7 @@ p.footer__links__item a{
         text-align: center;
     }
     .informations header p a, .footer__links p a{
-        font-size: 1em;
+        font-size: 0.8rem;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 700;
     } 
@@ -746,7 +748,7 @@ p.footer__links__item a{
     }
     .categories{
         justify-content: space-between;
-        margin-top: 100px;
+        margin-top: 150px;
     }
     .categories__item:nth-child(1){
         background: url("../img/Categories_image_mei.png") no-repeat center;
@@ -763,7 +765,7 @@ p.footer__links__item a{
     .forth-article{
         flex-direction: column;
         align-items: center;
-        margin-top: 100px;
+        margin-top: 50px;
         background: url("../img/decoration_element_article4.png") no-repeat 45% 50%;
         margin-bottom:10px;
     }
@@ -785,7 +787,7 @@ p.footer__links__item a{
     }
     .forth-article__text__plaintext p{
         margin-top:25px;
-        width:67vw;
+        width:85vw;
         max-width:515px;
     }
     footer{
@@ -793,15 +795,23 @@ p.footer__links__item a{
     }
     .footer__icons, .footer__links{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
     }
     .footer__links{
         flex-wrap: wrap;
         width:80vw;
-        min-width: 450px;
+        min-width: 200px;
+        padding: 15px 0px 0px;
+    }
+    p.footer__links__item{
+        padding: 10px 0px 10px;
+    }
+    p.footer__links__item.empty{
+       padding:10px;
     }
     p.footer__links__item a{
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
     .footer__textarea{
         width:95vw;
@@ -810,7 +820,8 @@ p.footer__links__item a{
         margin-top:50px;  
     }
     .footer__icons{
-        width:35vw;
+        justify-content: space-between;
+        width:40vw;
         max-width:270px;
         margin: 60px auto 100px;
     }
