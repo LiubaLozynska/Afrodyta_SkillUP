@@ -476,8 +476,9 @@ p.footer__links__item a{
       .content {
         display: flex;
         position: absolute;
-        left: 0px;
-        width: 96vw;
+        left: auto;
+        width: 95vw;
+        max-width: 680px;
         top:70px;
         padding: 0 18px;
         max-height: 0;
@@ -574,6 +575,7 @@ p.footer__links__item a{
         width:95vw;
         max-width: 680px;
         height: 260px;
+        margin-top:50px;
     }
     .articles-wrap{
         flex-direction: column;
@@ -641,25 +643,22 @@ p.footer__links__item a{
     .third-article__text h2, .forth-article__text h2{
        text-align: right;
     }
-    .third-article__text__plaintext{
+    .third-article__text .small_txt{
         width:95vw;
         max-width: 680px;
         margin-top: 50px; 
-        order: 4;  
+        order: 3;  
     }
     .third-article__text .p_date{
        order: 1;
        text-align: right;
     }
-    .third-article__text .read_more{
+    .third-article__text p.read_more{
         text-align: right;
         order: 5;
     }
-    .third-article__text h2[class=heading_thin]{
+    .third-article__text hgroup{
         order: 2;
-    }
-    .third-article__text h2[class=heading_thick]{
-        order: 3;
     }
     .third-article__image{
         align-self: flex-start;
@@ -760,7 +759,7 @@ p.footer__links__item a{
         background: url("../img/Categories_image_eum.png") no-repeat center;
     }
     section.categories__item h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .forth-article{
         flex-direction: column;
@@ -791,7 +790,7 @@ p.footer__links__item a{
         max-width:515px;
     }
     footer{
-        margin-top: 60px;
+        margin-top: 100px;
     }
     .footer__icons, .footer__links{
         display: flex;
@@ -802,7 +801,6 @@ p.footer__links__item a{
         flex-wrap: wrap;
         width:80vw;
         min-width: 200px;
-        padding: 15px 0px 0px;
     }
     p.footer__links__item{
         padding: 10px 0px 10px;
@@ -811,7 +809,7 @@ p.footer__links__item a{
        padding:10px;
     }
     p.footer__links__item a{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .footer__textarea{
         width:95vw;
